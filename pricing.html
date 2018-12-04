@@ -41,6 +41,8 @@
       <!-- End Facebook Pixel Code -->
 
 
+      <!-- Load up Jquery baby -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     </head>
     <body>
@@ -62,76 +64,74 @@
                   <p class="margin-top">Basic email support<p>
                     <a href="signup-1.html">
                       <button id="addToCartButton-0">Get Started</button>
-                      <script type="text/javascript">
-                        $( '#addToCartButton-0' ).click(function() {
-                          fbq('track', 'Purchase', {
-                            value: 0,
-                            currency: 'USD',
-                          });
-                        </script>
-                      </a>
-                      <p class="margin-top">Always free</p>
-                    </div>
+                    </a>
+                    <p class="margin-top">Always free</p>
                   </div>
+                </div>
 
-                  <div class="col-xs-12 col-sm-4">
-                    <div class="pricing-container margin-top">
-                      <h1>$5</h1>
-                      <p class="grey">per month</p>
-                      <p class="margin-top">5k scanned messages<p>
-                        <p class="margin-top">100 texts<p>
-                          <p class="margin-top">Priority support<p>
-                            <a href="signup-2.html">
-                              <button>Start a free trial</button>
-                              <button id="addToCartButton-5">Start a free trial</button>
-                              <script type="text/javascript">
-                                $( '#addToCartButton-5' ).click(function() {
-                                  fbq('track', 'Purchase', {
-                                    value: 5,
-                                    currency: 'USD',
-                                  });
-                                </script>
-                              </a>
-                              <p class="margin-top">Free for 14 days</p>
+                <div class="col-xs-12 col-sm-4">
+                  <div class="pricing-container margin-top">
+                    <h1>$5</h1>
+                    <p class="grey">per month</p>
+                    <p class="margin-top">5k scanned messages<p>
+                      <p class="margin-top">100 texts<p>
+                        <p class="margin-top">Priority support<p>
+                          <a href="signup-2.html">
+                            <button id="addToCartButton-5">Start a free trial</button>
+                          </a>
+                          <p class="margin-top">Free for 14 days</p>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-4">
+                        <div class="pricing-container margin-top">
+                          <h1>$9</h1>
+                          <p class="grey">per month</p>
+                          <p class="margin-top">25k scanned messages<p>
+                            <p class="margin-top">Unlimited texts<p>
+                              <p class="margin-top">Super priority support<p>
+                                <a href="signup-3.html">
+                                  <button id="addToCartButton-9">Start a free trial</button>
+
+                                </a>
+                                <p class="margin-top">Free for 14 days</p>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="row center-xs">
+                            <div class="col-xs-12 col-sm-12">
+                              <h3>Don't see your plan here?</h3>
+                              <p>If you need a plan with a little more, <a href="mailto:joenewbry@gmail.com">contact Joe</a> to get something setup just for you.</p>
                             </div>
                           </div>
 
-                          <div class="col-xs-12 col-sm-4">
-                            <div class="pricing-container margin-top">
-                              <h1>$9</h1>
-                              <p class="grey">per month</p>
-                              <p class="margin-top">25k scanned messages<p>
-                                <p class="margin-top">Unlimited texts<p>
-                                  <p class="margin-top">Super priority support<p>
-                                    <a href="signup-3.html">
-                                      <button>Start a free trial</button>
-                                      <button id="addToCartButton-9">Start a free trial</button>
-                                      <script type="text/javascript">
-                                        $( '#addToCartButton-9' ).click(function() {
-                                          fbq('track', 'Purchase', {
-                                            value: 9,
-                                            currency: 'USD',
-                                          });
-                                        </script>
+                        </main>
 
-                                      </a>
-                                      <p class="margin-top">Free for 14 days</p>
-                                    </div>
-                                  </div>
-
-                                </div>
-
-                                <div class="row center-xs">
-                                  <div class="col-xs-12 col-sm-12">
-                                    <h3>Don't see your plan here?</h3>
-                                    <p>If you need a plan with a little more, <a href="mailto:joenewbry@gmail.com">contact Joe</a> to get something setup just for you.</p>
-                                  </div>
-                                </div>
-
-                              </main>
-
-                              <footer class="container">
-                                <p>Copyright © 2018 Less Mail Labs</p>
+                        <footer class="container">
+                          <p>Copyright © 2018 Less Mail Labs</p>
+                          <script type="text/javascript">
+                            $( '#addToCartButton-0' ).click(function() {
+                              fbq('track', 'Purchase', {
+                                value: 0,
+                                currency: 'USD',
+                              })});
+                            </script>
+                            <script type="text/javascript">
+                              $( '#addToCartButton-5' ).click(function() {
+                                fbq('track', 'Purchase', {
+                                  value: 5,
+                                  currency: 'USD',
+                                })});
+                              </script>
+                              <script type="text/javascript">
+                                $( '#addToCartButton-9' ).click(function() {
+                                  fbq('track', 'Purchase', {
+                                    value: 9,
+                                    currency: 'USD',
+                                  })});
+                                </script>
                               </footer>
                             </body>
                             </html>

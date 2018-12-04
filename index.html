@@ -39,7 +39,8 @@
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
-
+<!-- Load up Jquery baby -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   
 </head>
 <body>
@@ -82,11 +83,6 @@
           <h2>Plans & Pricing</h2>
           <p>Choose a plan to fit your needs<p>
           <a href="pricing.html"><button id="submitButton">View Pricing</button></a>
-          <script type="text/javascript">
-$( '#submitButton' ).click(function() {
-  fbq('track', 'Lead');
-})
-</script>
         </div>
       </div>
     </div>
@@ -94,6 +90,11 @@ $( '#submitButton' ).click(function() {
 
   <footer class="container">
     <p>Copyright © 2018 Less Mail Labs</p>
+              <script type="text/javascript">
+$( '#submitButton' ).click(function() {
+  fbq('track', 'Lead');
+})
+</script>
   </footer>
 </body>
 </html>

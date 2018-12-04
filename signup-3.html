@@ -42,7 +42,8 @@
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
-
+<!-- Load up Jquery baby -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -72,12 +73,6 @@
       <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c3f8d956a59016ebb7eb9b51e_4497f610b1" tabindex="-1" value=""></div>
       <div class="clear"><input type="submit" value="Remind me" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-      <script type="text/javascript">
-$( '#mc-embedded-subscribe' ).click(function() {
-  fbq('track', 'CompleteRegistration', {
-    value: 9,
-  });
-</script>
     </div>
   </form>
 </div>
@@ -90,6 +85,12 @@ $( '#mc-embedded-subscribe' ).click(function() {
 
   <footer class="container">
     <p>Copyright © 2018 Less Mail Labs</p>
+          <script type="text/javascript">
+$( '#mc-embedded-subscribe' ).click(function() {
+  fbq('track', 'CompleteRegistration', {
+    value: 9,
+  })});
+</script>
   </footer>
 
 </body>
