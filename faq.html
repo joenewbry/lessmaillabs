@@ -49,38 +49,26 @@
   <main class="main" role="main">
     <div class="row center-xs hero">
       <div class="col-sm-12 col-lg-9">
-        <h1>Never check email again</h1>
+        <h1>F.A.Q.</h1>
       </div>
     </div>
-    <div class="row">
-
+    <div class="col-xs-12 col-sm-6 col-sm-offset-2">
+      <h2>Where did this idea come from?</h2>
+      <p>As an engineer I like to spend uninterupted time working. However I worry about missing urgent messages. Recent advances in machine learning make it possible to tag messages as urgent or non-urgent.</p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-sm-offset-2">
+      <h2>How does it work?</h2>
+      <p>We use machine learning to check the urgency of messages. For the nerds (we love nerds), we use Word2Vec to convert words into a format computers like better, and then use tensorflow, and Keras, to build a model trained on an email corpus and tagged by three different people for urgency. Everytime you recieve an email we get notified via Google's Pub/Sub Api and run the massage through our model to determine if we should send you a text or not. We're still tuning the model training and trying to figure out how similar people urgency preferences are.</p>
+    </div>
       <div class="col-xs-12 col-sm-6 col-sm-offset-2">
-        <h2>Hi! You caught us before we were ready.</h2>
-        <p>Less Mail Labs is still building our Alpha! We’re working hard to finish it up, and it should be ready to help you with your projects soon. Enter your email below and we’ll let you know as soon as it’s ready!</p>
+        <h2>Is this secure?</h2>
+        <p>We do our best! Your messages are never stored and checked by a computer in less time than it will take you to read this sentence. So no one besides you will ever read your messages. We use twilio to send text messages so we never store your phone number.</p>
       </div>
-
+      <div class="col-xs-12 col-sm-6 col-sm-offset-2">
+        <h2>Does our urgency filtering get better with use?</h2>
+        <p>Right now our machine learning model doesn't retrain with user submitted data. But in the future we'd like to add model customization. Think of it like the way an assistant learns individual preferences. When Kristie get's an email from Legal she likes to respond quickly but waits until the weekend to respond to a message from her Aunt. On the other hand Kyle likes to respond quickly to his Aunt but doesn't respond quickly to messages from Legal.</p>
+      </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        <div class="signup-form">
-
-
-          <!-- Begin Mailchimp Signup Form -->
-<div id="mc_embed_signup">
-  <form action="https://sftechswag.us18.list-manage.com/subscribe/post?u=c3f8d956a59016ebb7eb9b51e&amp;id=4497f610b1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c3f8d956a59016ebb7eb9b51e_4497f610b1" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Remind me" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-<script type="text/javascript">
-$( '#mc-embedded-subscribe' ).click(function() {
-  fbq('track', 'CompleteRegistration', {
-    value: 0,
-  })});
-</script>
-    </div>
-  </form>
 </div>
 
 <!--End mc_embed_signup-->
